@@ -6,7 +6,8 @@ export class UsersService {
   constructor(private http: Http) {}
 
   getUsers() {
-    return this.http.get( url:'https://randomuser.me/api/?inc=gender,name,picture,location&results=8&nat=gb');
+    return this.http.get( url:'https://randomuser.me/api/?inc=gender,name,picture,location&results=8&nat=gb'); //десь тут помилка ??
+
   }
 
 
