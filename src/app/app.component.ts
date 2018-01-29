@@ -13,6 +13,8 @@ users = [];
 constructor(private usersService: UsersService) {}
 ngOnInit() {
     //this.users = this.UsersService.users
-    this.usersService.getUsers();
+    this.usersService.getUsers().subscribe(next: users => {
+    console.log(users)
+  })
   }
 }
